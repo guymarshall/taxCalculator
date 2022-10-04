@@ -13,15 +13,6 @@ function calculate_tax($bands, $monthly_salary) {
         $running_pay -= $band[2];
         $running_tax += $band[1] * $band[2];
     }
-    // for ($i = 0; $i < 4; $i++) {
-    //     if ($bands[$i][0] >= 0.0) {
-    //         $bands[$i][2] = min($running_pay, $bands[$i][0]);
-    //     } else {
-    //         $bands[$i][2] = $running_pay;
-    //     }
-    //     $running_pay -= $bands[$i][2];
-    //     $running_tax += $bands[$i][1] * $bands[$i][2];
-    // }
 
     return $running_tax;
 }
